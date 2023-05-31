@@ -1,3 +1,6 @@
+#Usage
+#python3  kashika_wordcloud.py InputFileName OutputFileName
+#
 import sys
 from wordcloud import WordCloud
 import matplotlib.pyplot as plt
