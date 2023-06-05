@@ -15,7 +15,7 @@ with open(input_file, "r") as f:
 # 単語の重複表示は無効化する
 wc = WordCloud(background_color="white",
                font_path="/usr/share/fonts/meiryo/meiryo.ttc",
-               width=1000, height=750,
+               width=5000, height=3600,
                collocations=False)
 
 wordcloud = wc.generate(" ".join(words))
