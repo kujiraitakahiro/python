@@ -12,7 +12,7 @@ output_file = sys.argv[2]
 with open(input_file, "r") as f:
     words = f.read().splitlines()
 
-# ハート形のマスクを読み込む
+# 画像ファイルのマスクを読み込む
 mask = np.array(Image.open("random_mask.png"))
 
 # ワードクラウドを作成する
@@ -37,4 +37,3 @@ plt.imshow(wordcloud, interpolation='bilinear')
 plt.axis("off")
 plt.savefig(output_file, format='png', bbox_inches='tight', pad_inches=0)
 plt.close()
-
